@@ -93,9 +93,11 @@ let list:any = [
 		// background-color: green;
 		margin-top: 260px;
 		height: fit-content;
+		margin-left: -44px;
 	}
 	li:nth-child(odd) {
 		height: fit-content;
+		margin-left: 20px;
 		.title p {
 			transform: rotate(-90deg);
 			transform-origin: 10px 7px;
