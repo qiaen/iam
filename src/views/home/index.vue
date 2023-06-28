@@ -64,7 +64,7 @@ let list:any = [
 			transform: rotate(-90deg);
 			transform-origin: 22px 6px;
 		}
-		width: 60px;
+		width: 34px;
 	}
 	.imgs {
 		.shadow {
@@ -98,16 +98,7 @@ let list:any = [
 		height: fit-content;
 		.title p {
 			transform: rotate(-90deg);
-			transform-origin: 27px -8px;
-		}
-	}
-}
-@media only screen and (max-width: 1000px) {
-	.sit-contain {
-		li {
-			width: 84%;
-			margin-left: 8%;
-			margin-top: 100px !important;
+			transform-origin: 10px 7px;
 		}
 	}
 }
