@@ -6,7 +6,7 @@ export function ShowMenu(val: boolean) {
 	isShowMenu.value = val
 }
 
-export let banner = reactive({
+export let banner: any = reactive({
 	h1: `No <span>Need</span> for<br/>item <span>Detail</span> pages?`,
 	h2: `Use the <span>Beautiful</span> pop-up <span>Gallery</span>!`,
 	description: `<span>Show Pop-up Gallery on click!</span>`,
@@ -18,6 +18,7 @@ export function SetBanner(b: any) {
 	banner.h1 = b.h1
 	banner.h2 = b.h2
 	banner.description = b.description
-	banner.bg = b.bg
-	(document as any).querySelector('meta[name = "theme-color"]').content = b.bg
+	banner.bg = b.bg || '#37bdb6'
+	let doc:any = document
+	doc.querySelector('meta[name = "theme-color"]').content = b.bg || '#37bdb6'
 }
