@@ -19,4 +19,5 @@ export function SetBanner(b: any) {
 	banner.h2 = b.h2
 	banner.description = b.description
 	banner.bg = b.bg
+	(document as any).querySelector('meta[name = "theme-color"]').content = b.bg
 }
