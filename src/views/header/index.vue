@@ -1,6 +1,6 @@
 <template>
 	<header class="site-header width100" :class="isShowMenu ? 'is-show-menu' : ''">
-		<div class="container-fluid transition3" :style="{background: banner.bg}">
+		<div class="container-fluid" :style="{background: banner.bg}">
 			<div class="container-inner">
 				<div class="fxmiddle flex fcfff">
 					<span class="logo-box">
@@ -21,7 +21,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="decor-container"><div class="theme-rotate transition3" :style="{background: banner.bg}"></div></div>
+		<div class="decor-container"><div class="theme-rotate" :style="{background: banner.bg}"></div></div>
 		<imenu></imenu>
 	</header>
 </template>

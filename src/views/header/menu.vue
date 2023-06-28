@@ -73,7 +73,7 @@ $c51: #515151;
 	transition: 0.36s;
 	transform: translate3d(480px, 0, 0);
 	.nav-container {
-		width: 250px;
+		width: 239px;
 		padding: 50px 50px 20px 20px;
 		background-color: #{$c51};
 		height: 100vh;
@@ -118,6 +118,7 @@ $c51: #515151;
 	.sub-ul a {
 		color: #aaa !important;
 	}
+	
 }
 .nav-menu {
 	a,
@@ -157,6 +158,13 @@ $c51: #515151;
 		left: 0;
 		z-index: -1;
 		transform-origin: 0 0;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.site-nav .close {
+		right: 200px;
+		left: auto;
+		transform: rotate(00deg);
 	}
 }
 </style>
