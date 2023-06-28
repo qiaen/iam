@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1000px) {
+	.sit-contain {
+		transform: translate3d(0, -270px, 0)!important;
+		li {
+			width: 84%;
+			margin-left: 8%;
+			margin-top: 100px !important;
+		}
+	}
+	.sit-contain-works {
+		li {
+			flex-wrap: wrap;
+			flex-direction: column-reverse !important;
+		}
+		.imgs {
+			width: 94% !important;
+			// margin-left: 3%;
+		}
+		.title {
+			padding-top: 20px;
+			text-align: center;
+		}
+		.imgs, .title {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}

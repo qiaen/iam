@@ -1,0 +1,25 @@
+@import './var.scss';
+/*color*/
+.grdcolor {
+	background: -webkit-linear-gradient(0deg, #ff9c58, #fe707e);
+}
+// 采用的颜色以及对应的色值
+$colors: (
+	fff: $fff,
+	blue: $blue,
+	org: $org,
+	999: $d9,
+	666: $d6,
+	333: $d3,
+	red: $red,
+	green: $green,
+	main: $main
+);
+@each $key, $value in $colors {
+	.#{'fc' + $key} {
+		color: #{$value};
+	}
+	.#{'bg' + $key} {
+		background-color: #{$value};
+	}
+}

@@ -1,0 +1,28 @@
+@use './flex.scss';
+@use './space.scss';
+@use './font.scss';
+@use './color.scss';
+@use './transition.scss';
+@font-face {
+	font-family: 'Varela Round';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../font/Varela_Round-normal-400.woff) format('woff');
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Varela Round', sans-serif;
+}
+ul,
+li {
+	list-style: none;
+}
+.width100 {
+	width: 100%;
+}
+.pointer {
+	cursor: pointer;
+}
