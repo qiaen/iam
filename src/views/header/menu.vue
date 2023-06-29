@@ -33,8 +33,6 @@
 	</nav>
 </template>
 <script lang="ts" setup>
-import { watch } from 'vue'
-import { useRoute } from 'vue-router'
 import { ShowMenu } from '@/store/Layout'
 let route: any = useRoute()
 /** 菜单折叠/收起 时重新计算 */

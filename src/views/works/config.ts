@@ -128,4 +128,4 @@ export default {
 	},
 	/** 芒果读书运营端 */
 	mgo: []
-}
+} as any

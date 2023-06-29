@@ -5,16 +5,15 @@ export let isShowMenu: Ref<boolean> = ref(false)
 export function ShowMenu(val: boolean) {
 	isShowMenu.value = val
 }
-
-export let banner: any = reactive({
+let defaultBanner = {
 	h1: `No <span>Need</span> for<br/>item <span>Detail</span> pages?`,
 	h2: `Use the <span>Beautiful</span> pop-up <span>Gallery</span>!`,
 	description: `<span>Show Pop-up Gallery on click!</span>`,
 	bg: '#37bdb6'
-})
+}
+export let banner: any = reactive(JSON.parse(JSON.stringify(defaultBanner)))
 /** 设置banner显示的文字，颜色 */
-export function SetBanner(b: any) {
-	console.log(b)
+export function SetBanner(b: any = defaultBanner) {
 	banner.h1 = b.h1
 	banner.h2 = b.h2
 	banner.description = b.description

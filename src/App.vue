@@ -7,4 +7,3 @@
 import Hd from './views/header/index.vue'
 import Ft from './views/footer/index.vue'
 </script>
-<style lang="scss"></style>

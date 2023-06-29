@@ -20,7 +20,7 @@
 							<a href=""><i class=" pl10 pr10 fcfff fsize18 i-icon-facebook"></i></a>
 						</div>
 						<div class="pt50 fcfff">
-							Pictures powered by Qiniu & Vue & Tencent
+							<a href="https://beian.miit.gov.cn/" target="_blank" class="fcfff">豫ICP备18004249号-2</a>
 						</div>
 					</div>
 				</div>

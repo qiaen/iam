@@ -14,7 +14,9 @@
 	</ul>
 </template>
 <script setup lang="ts">
-let list:any = [
+import { SetBanner } from '@/store/Layout'
+SetBanner()
+let list: any = [
 	{
 		img: '',
 		title: ''

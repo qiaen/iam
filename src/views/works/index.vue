@@ -15,8 +15,6 @@
 </template>
 <script lang="ts" setup>
 import config from './config'
-import { computed, watch } from 'vue'
-import { useRoute } from 'vue-router'
 import { SetBanner } from '@/store/Layout'
 let route: any = useRoute()
 let data: any = computed(() => config[route.params.name])
