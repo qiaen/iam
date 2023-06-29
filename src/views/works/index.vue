@@ -26,7 +26,7 @@ watch(() => route.path, (val: boolean) => {
 	requestAnimationFrame(() => {
 		SetBanner({
 			h1: data.value.name,
-			h2: '',
+			h2: data.value.h2,
 			description: data.value.description,
 			bg: data.value.bg
 		})

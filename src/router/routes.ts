@@ -17,7 +17,7 @@ export default [
 		}
 	},
 	{
-		path: '/conact',
+		path: '/contact',
 		name: '联系我',
 		component: () => import('@/views/about/index.vue'),
 		meta: {

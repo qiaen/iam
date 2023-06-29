@@ -2,7 +2,8 @@ export default {
 	/** 新标签 */
 	tab: {
 		name: `<span class="fcfff">Teemo 新标签 Chrome插件</span>`,
-		description: ``,
+		h2: `<span class="fcfff">已上架Chrome应用市场</span>`,
+		description: `<a href='' target="_blank" class="fcfff">前往下载</a>`,
 		url: 'https://chrome.google.com/webstore/detail/teemo-%E6%96%B0%E6%A0%87%E7%AD%BE/nimenpblcfmaoogldnmklnfccimjohjn?hl=zh-CN&authuser=0',
 		bg:'#012329',
 		color: '#fcfcfc',
@@ -14,7 +15,7 @@ export default {
 					'作为前端，打交道最密切的要数Chrome，每次面对简陋的浏览器新标签页，总感觉缺了上门，遂早在17年的时候，就萌生了定制自己的新标签页插件的想法，于是翻阅资料摸索着做了一个只有书签的标签页，在标签页左侧借鉴了TIM的日历以折纸的形式展现背景图和签名，不过呢，我的背景可以是视频，更大气！'
 			},
 			{
-				img: 'https://file.tuoyan.club/1001.png',
+				img: 'https://file.tuoyan.club/1023.png',
 				title: '日历 Calendar',
 				description:
 					'日历模块，最初是为了记录待办，查看日历，且细心的增加了点击日期上下开合显示输入框输入待办，但是随着需求量任务量增加，需要记录的东西越来越多，比如需求池地址，上线准备事项等等，现在的日历已经不能满足使用，所以后来开发了基于Markdown语法的笔记功能。'

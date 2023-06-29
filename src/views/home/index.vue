@@ -6,7 +6,8 @@
 			</div>
 			<div class="imgs flex1">
 				<div class="shadow">
-					<router-link :to="item.url || ''"><img class="width100" :src="item.img" :alt="item.title" /></router-link>
+					<router-link v-if="!item.href" :to="item.url || ''"><img class="width100" :src="item.img" :alt="item.title" /></router-link>
+					<a :href="item.href" target="_blank" v-else><img class="width100" :src="item.img" :alt="item.title" /></a>
 				</div>
 			</div>
 		</li>
@@ -41,6 +42,7 @@ let list:any = [
 	{
 		img: 'https://file.tuoyan.club/1022.png',
 		url: '/works/lanlingwang',
+		href: 'http://lanling.diumx.com',
 		title: '兰陵王Vue2后台管理系统模板'
 	}
 ]

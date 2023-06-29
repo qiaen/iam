@@ -18,7 +18,7 @@ export function SetBanner(b: any) {
 	banner.h1 = b.h1
 	banner.h2 = b.h2
 	banner.description = b.description
-	banner.bg = b.bg || '#37bdb6'
-	let doc:any = document
-	doc.querySelector('meta[name = "theme-color"]').content = b.bg || '#37bdb6'
+	// banner.bg = b.bg || '#37bdb6'
+	// let doc:any = document
+	// doc.querySelector('meta[name = "theme-color"]').content = b.bg || '#37bdb6'
 }

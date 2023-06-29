@@ -11,34 +11,16 @@
 				<div class="fc999 fsize18">Unique Portfolio</div>
 			</div>
 			<menu class="nav-menu txright pt50">
-				<li>
-					<router-link to="/" class="current fsize18">首页</router-link>
-				</li>
-				<li>
-					<label class="fsize18 a">作品</label>
-					<ul class="sub-ul">
-						<li>
-							<router-link to="/works/tab" class="fsize16 fc999">Teemo 新标签浏览器插件</router-link>
-						</li>
-						<li>
-							<router-link to="/works/mgui" class="fsize16">芒果读书客户端</router-link>
-						</li>
-						<li>
-							<router-link to="/works/mgo" class="fsize16">芒果读书运营端</router-link>
-						</li>
-						<li>
-							<router-link to="/works/huamulan" class="fsize16">花木兰Vue3后台管理系统模板</router-link>
-						</li>
-						<li>
-							<router-link to="/works/lanlingwang" class="fsize16">兰陵王Vue2后台管理系统模板</router-link>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<router-link to="/about" class="fsize18">关于</router-link>
-				</li>
-				<li>
-					<router-link to="/conact" class="fsize18">联系我</router-link>
+				<li v-for="item in menus">
+					<router-link v-if="!item.child" :to="item.path" :class="route.path == item.path ? 'current' : ''" class="fsize18">{{ item.name }}</router-link>
+					<template v-else>
+						<label class="fsize18 a">{{ item.name }}</label>
+						<ul v-for="aaa in item.child" class="sub-ul">
+							<li>
+								<router-link :class="route.path == aaa.path ? 'current' : ''" :to="aaa.path" class="fsize16 fc999">{{ aaa.name }}</router-link>
+							</li>
+						</ul>
+					</template>
 				</li>
 			</menu>
 			<div class="search flex pt50">
@@ -61,6 +43,47 @@ watch(() => route.path, (val: boolean) => {
 		ShowMenu(false)
 	})
 })
+
+let menus = [
+	{
+		name: '首页',
+		path:'/',
+	},
+	{
+		name: '个人作品',
+		path:'/works',
+		child: [
+			{
+				name: 'Teemo 新标签浏览器插件',
+				path:'/works/tab',
+			},
+			{
+				name: '芒果读书客户端',
+				path:'/works/mgui',
+			},
+			{
+				name: '芒果读书运营端',
+				path:'/works/mgo',
+			},
+			{
+				name: '花木兰Vue3后台管理系统模板',
+				path:'/works/huamulan',
+			},
+			{
+				name: '兰陵王Vue2后台管理系统模板',
+				path:'/works/lanlingwang',
+			}
+		]
+	},
+	{
+		name: '关于',
+		path:'/about',
+	},
+	{
+		name: '联系我',
+		path:'/contact',
+	}
+]
 </script>
 <style lang="scss">
 $c51: #515151;
@@ -117,6 +140,7 @@ $c51: #515151;
 	}
 	.sub-ul a {
 		color: #aaa !important;
+		line-height: 36px;
 	}
 	
 }
