@@ -23,12 +23,17 @@
 					</template>
 				</li>
 			</menu>
-			<div class="search flex pt50">
+			<!-- <div class="search flex pt50">
 				<input class="pr10 flex1" type="text" />
 				<button class="fsize18">
 					<i class="i-icon-search"></i>
 				</button>
-			</div>
+			</div> -->
+            <div class="pt50 txright">
+                <a target="_blank" href="https://github.com/qiaen"><i class=" pl10 pr10 fcfff fsize18 iconfont icon-github"></i></a>
+                <a target="_blank" href="https://diumx.com"><i class="pl10 pr10 fcfff fsize18 iconfont icon-mangguo"></i></a>
+                <a target="_blank" href="https://gitlab.com/qiaen"><i class=" pl10 pr10 fcfff fsize18 iconfont icon-gitlab"></i></a>
+            </div>
 		</div>
 	</nav>
 </template>
@@ -73,14 +78,14 @@ let menus = [
 			}
 		]
 	},
-	{
-		name: '关于',
-		path:'/about',
-	},
-	{
-		name: '联系我',
-		path:'/contact',
-	}
+	// {
+	// 	name: '关于',
+	// 	path:'/about',
+	// },
+	// {
+	// 	name: '联系我',
+	// 	path:'/contact',
+	// }
 ]
 </script>
 <style lang="scss">
@@ -186,7 +191,7 @@ $c51: #515151;
 	.site-nav .close {
 		right: 200px;
 		left: auto;
-		transform: rotate(00deg);
+		transform: rotate(0deg);
 	}
 }
 </style>

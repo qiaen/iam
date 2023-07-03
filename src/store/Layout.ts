@@ -6,9 +6,9 @@ export function ShowMenu(val: boolean) {
 	isShowMenu.value = val
 }
 let defaultBanner = {
-	h1: `No <span>Need</span> for<br/>item <span>Detail</span> pages?`,
-	h2: `Use the <span>Beautiful</span> pop-up <span>Gallery</span>!`,
-	description: `<span>Show Pop-up Gallery on click!</span>`,
+	h1: `Hi, <span>welcome</span><br/>to <span>here</span>`,
+	h2: ``,
+	description: `<a class="fcfff relative" style="z-index: 9" href="https://github.com/qiaen" target="_blank">https://github.com/qiaen</a>`,
 	bg: '#37bdb6'
 }
 export let banner: any = reactive(JSON.parse(JSON.stringify(defaultBanner)))

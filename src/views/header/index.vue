@@ -14,7 +14,7 @@
 				</div>
 				<div class="row">
 					<div class="site-branding">
-						<h1 class="site-title" v-html="banner.h1"></h1>
+						<h1 class="site-title fcfff" v-html="banner.h1"></h1>
 						<h2 class="site-subtitle" v-html="banner.h2"></h2>
 						<p class="site-description" v-html="banner.description"></p>
 					</div>

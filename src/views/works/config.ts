@@ -1,9 +1,9 @@
 export default {
 	/** 新标签 */
 	tab: {
-		name: `<span class="fcfff">Teemo 新标签 Chrome插件</span>`,
-		h2: `<span class="fcfff">已上架Chrome应用市场</span>`,
-		description: `<a href='' target="_blank" class="fcfff">前往下载</a>`,
+		name: `<span class="fcfff">Teemo 新标签</span>`,
+		h2: `<span class="fcfff"> Chrome插件，已上架Chrome应用市场，曾在公司研发部推广使用</span>`,
+		description: `<a href='https://chrome.google.com/webstore/detail/teemo-%E6%96%B0%E6%A0%87%E7%AD%BE/nimenpblcfmaoogldnmklnfccimjohjn?hl=zh-CN&authuser=0' target="_blank" class="fcfff">前往下载（需梯子）</a>`,
 		url: 'https://chrome.google.com/webstore/detail/teemo-%E6%96%B0%E6%A0%87%E7%AD%BE/nimenpblcfmaoogldnmklnfccimjohjn?hl=zh-CN&authuser=0',
 		bg:'#012329',
 		color: '#fcfcfc',
@@ -49,26 +49,40 @@ export default {
 	},
 	/** 兰陵王 */
 	lanlingwang: {
-		name: '兰陵王Vue2后台管理系统模板',
-		description: ``,
+		name: '兰陵王',
+        h2: 'Vue2后台管理系统模板',
+		description: `基于vue2集成权限管理，动态菜单`,
 		url: 'https://lanling.diumx.com',
-		bg:'#884888',
-		list: []
+		list: [
+            {
+				img: 'https://file.tuoyan.club/1024.png?e=1688280003&token=y8o5Lboeg-JPOAfpfJYQzaTsAonATIjsYFwjSeVf:bj7fQRcI8RDqa-txe2mLsK4xZnM=',
+				title: '首页',
+				url: 'https://lanling.diumx.com',
+				description: `因为是开源项目，所以这里不一一介绍了<br>在线预览: <a target="_blank" href="https://lanling.diumx.com">https://lanling.diumx.com</a><br>查看源码: <a target="_blank" href="https://github.com/qiaen/lan-ling">https://github.com/qiaen/lan-ling</a> `
+			},
+        ]
 	},
 	/** huamulan */
 	huamulan: {
-		name: '花木兰Vue3后台管理系统模板',
-		description: ``,
+		name: '花木兰',
+        h2: 'Vue3后台管理系统模板',
+		description: `特色：vue3 vite 多语言 暗黑主题色 权限管理 集成七牛云`,
 		url: 'https://mulan.diumx.com',
-		bg:'#012329',
-		list: []
+		list: [
+            {
+				img: 'https://file.tuoyan.club/1023.jpg',
+				title: '首页',
+				url: 'https://mulan.diumx.com',
+				description: `因为是开源项目，所以这里不一一介绍了<br>在线预览: <a target="_blank" href="https://mulan.diumx.com">https://mulan.diumx.com</a><br>查看源码: <a target="_blank" href="https://github.com/qiaen/huamulan">https://github.com/qiaen/huamulan</a> `
+			},
+        ]
 	},
 	/** 芒果读书客户端 */
 	mgui: {
-		name: '芒果读书 客户端',
-		description: ``,
+		name: '芒果读书',
+        h2: `客户端`,
+		description: `<a href='https://diumx.com' target="_blank" class="fcblue">芒果读书</a>是一个免费的 Kindle  电子书交流下载平台，是我首次学习 vue  的尝试，坚定了我从事前端行业的决心`,
 		url: 'http://diumx.com',
-		bg: '#1cbbe3',
 		list: [
 			{
 				img: 'https://file.tuoyan.club/1008.png',
@@ -127,5 +141,17 @@ export default {
 		]
 	},
 	/** 芒果读书运营端 */
-	mgo: []
+	mgo: {
+        name: '芒果读书',
+        h2: `运营端`,
+		description: `芒果读书的配套运营系统，前端使用vue2，后端使用koa2，数据库使用mysql。用来管理图书，用户，IP封禁，运营图书专题等`,
+        list: [
+            {
+				img: 'https://file.tuoyan.club/1018.png',
+				title: '看板',
+				url: 'https://diumx.com',
+				description: '截止到2023.6.26号，项目上线1976天，注册用户14107，上线图书10222本，网友留言22507条，总访客156948个'
+			},
+        ]
+    }
 } as any

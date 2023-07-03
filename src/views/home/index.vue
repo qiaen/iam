@@ -66,7 +66,7 @@ let list: any = [
 		align-items: end;
 		p {
 			transform: rotate(-90deg);
-			transform-origin: 22px 6px;
+			transform-origin: 20px 6px;
 		}
 		width: 34px;
 	}

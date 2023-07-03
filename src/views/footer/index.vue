@@ -12,12 +12,16 @@
 						<img src="@/assets/img/logo.svg" class="ish-logo-widget" alt="QUSQ logo" />
 						<p class="pt50 fcfff pb50">Unique Portfolio</p>
 						<div class="address">
-							<a href=""><i class=" pl10 pr10 fcfff fsize18 i-icon-twitter"></i></a>
+							<!-- <a href=""><i class=" pl10 pr10 fcfff fsize18 i-icon-twitter"></i></a>
 							<a href=""><i class=" pl10 pr10 fcfff fsize18 i-icon-behance"></i></a>
 							<a href=""><i class=" pl10 pr10 fcfff fsize18 i-icon-dribbble"></i></a>
 							<a href=""><i class=" pl10 pr10 fcfff fsize18 i-icon-instagram"></i></a>
 							<a href=""><i class=" pl10 pr10 fcfff fsize18 i-icon-gplus"></i></a>
-							<a href=""><i class=" pl10 pr10 fcfff fsize18 i-icon-facebook"></i></a>
+							<a href=""><i class=" pl10 pr10 fcfff fsize18 i-icon-facebook"></i></a> -->
+							<a target="_blank" href="https://github.com/qiaen"><i class="pl10 pr10 fcfff fsize18 iconfont icon-github"></i></a>
+                            <a target="_blank" href="https://diumx.com"><i class="pl10 pr10 fcfff fsize18 iconfont icon-mangguo"></i></a>
+							<a target="_blank" href="https://gitlab.com/qiaen"><i class="pl10 pr10 fcfff fsize18 iconfont icon-gitlab"></i></a>
+							
 						</div>
 						<div class="pt50 fcfff">
 							<a href="https://beian.miit.gov.cn/" target="_blank" class="fcfff">豫ICP备18004249号-2</a>
@@ -63,7 +67,6 @@ $c51: #515151;
 		height: 300px;
 	}
 	.address {
-
 	}
 }
 </style>
